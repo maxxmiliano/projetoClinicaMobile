@@ -1,4 +1,5 @@
 import { Alert, Text, TouchableOpacity } from "react-native";
+import { styles } from "./button.styles.js";
 
 function Button(props) {
 
@@ -6,23 +7,10 @@ function Button(props) {
     Alert.alert("clicou aqui");
   }
 
-  return <TouchableOpacity onPress={TesteClick} style={{
-    backgroundColor: "blue",
-    padding: 10,
-    margin: 40,
-    borderRadius: 10,
-    
-justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center"
-  }}>
-
-    <Text style={{
-      color: "red",
-      fontSize: 44
-    }}>
-      {props.text}</Text>
-
+  return <TouchableOpacity onPress={TesteClick} style={styles.btn}>
+       <Text style={styles.Text}>
+            {props.text}
+       </Text>
   </TouchableOpacity>
     
 
