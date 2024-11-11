@@ -20,10 +20,21 @@ export const styles = {
     },
 
     input: {
-      BackgroundColor: COLORs.gray3,
+      BackgroundColor: COLORs.gray5,
       padding: 20,
       borderRadius:6
+    },
+
+    footer: {
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "row"
+    },
+
+    footerLink: {
+        Color: COLORs.blue
     }
+
 
 
        
